@@ -1,7 +1,7 @@
 name: wirdul_latif
 description: Flutter package - Wirdul Latif - Imam Haddad's morning and evening supplications.
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/aslahmogral/wirdul_latif
 
 environment:
   sdk: '>=2.19.6 <3.0.0'

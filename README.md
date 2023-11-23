@@ -10,7 +10,7 @@ To use this package, add it to your pubspec.yaml:
 
 ```bash
   dependencies:
-  widul_latif: ^0.0.1
+  widul_latif: ^0.0.2
 
 ```
 
