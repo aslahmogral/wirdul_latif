@@ -32,7 +32,7 @@ String eveningWirdOne = getWirdArabic(index : 1,evening : true);
 String repCount = getWirdRepititionCount(index : 1);
 
 // Get the length of wird list 
-List<String> wirdListLength = getWirdListLength();
+int wirdListLength = getWirdListLength();
 
 ```
 
