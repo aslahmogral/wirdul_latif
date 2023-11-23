@@ -1,40 +1,56 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# Wirdul latif Flutter Package
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+A Flutter package that provides access to the wirdul latif(morning and evening supplication by imam haddad) in  Arabic. This package allows you to retrieve the , Arabic wirds, and repetition count of each .
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
-## Features
+## Installation
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+To use this package, add it to your pubspec.yaml:
 
-## Getting started
+```bash
+  dependencies:
+  widul_latif: ^0.0.1
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
 ```
 
-## Additional information
+    
+## Usage/Examples
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-# wirdul_latif
+Import the wirdul_latif library and use the provided functions to access the Names of Allah.
+
+```javascript
+import 'package:wirdul_latif/wirdul_latif.dart';
+
+// Get the Morning Wird in Arabic (index between 1 - 44)
+String morningWirdOne = getWirdArabic(index : 1);
+
+// Get the Evening Wird in Arabic (index between 1 - 44)
+String eveningWirdOne = getWirdArabic(index : 1,evening : true);
+
+// Get the repitition count of every wird
+String repCount = getWirdRepititionCount(index : 1);
+
+// Get the length of wird list 
+List<String> wirdListLength = getWirdListLength();
+
+```
+
+
+## License
+
+This package is released under the [MIT LICENSE](https://github.com/aslahmogral/wirdul_latif/blob/main/LICENSE). Feel free to use and modify it in your projects.
+
+If you have any questions, issues, or suggestions, please open an issue on the GitHub repository.
+
+
+
+
+## Author
+
+This package is maintained by [@aslahmogral](https://github.com/aslahmogral).
+
+Thank you for using the Wirdul Latif Flutter Package!
+
+
+

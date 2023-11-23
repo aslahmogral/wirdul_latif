@@ -1,3 +1,5 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* get morning and evening wird in arabic.
+* get repition count of each wird.
+* get length of wird list.
