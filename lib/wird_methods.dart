@@ -20,6 +20,22 @@ String getWirdArabic({required int index, bool evening = false}) {
   }
 }
 
+//get morning and evening wird in english
+String getWirdEnglish({required int index, bool evening = false}) {
+  if (index <= 0 || index >= 44) {
+    return 'please enter index between 1 and 44';
+  }
+  if (!evening) {
+    return wirdText[index]["english"];
+  } else {
+    if (eveningWirdIndex.contains(index)) {
+      return wirdText[index]["eenglish"];
+    } else {
+      return wirdText[index]["english"];
+    }
+  }
+}
+
 //get wird count
 String getWirdRepititionCount({required int index}) {
   if (index <= 0 || index >= 44) {
